@@ -1,0 +1,32 @@
+import com.vpn.vpnandroid.build.Dependencies
+
+apply plugin: Dependencies.Plugin.androidLib
+apply plugin: Dependencies.Plugin.kotlinAndroid
+apply plugin: Dependencies.Plugin.kotlinParcelize
+
+android {
+
+    buildFeatures {
+        dataBinding = true
+    }
+
+}
+
+dependencies {
+    implementation(
+            project(':core:di-android'),
+            project(':util')
+    )
+    implementation(
+            Dependencies.AndroidX.appCompat,
+            Dependencies.AndroidX.fragmentKtx,
+            Dependencies.AndroidX.liveData,
+            Dependencies.Di.koinAndroid,
+            Dependencies.Rx.rx,
+            Dependencies.Rx.autoDispose,
+            Dependencies.Rx.autoDisposeAndroidAC,
+            Dependencies.Coroutines.coroutinesCore,
+            Dependencies.AndroidX.navigation,
+            Dependencies.AndroidX.material
+    )
+}

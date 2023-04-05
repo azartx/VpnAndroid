@@ -1,0 +1,14 @@
+import com.vpn.vpnandroid.build.Dependencies
+
+apply plugin: Dependencies.Plugin.kotlin
+
+dependencies {
+    implementation(
+            Dependencies.Lib.ktStdLib,
+            Dependencies.Lib.timber,
+            Dependencies.Rx.rx,
+            Dependencies.Coroutines.coroutinesCore,
+            Dependencies.Network.retrofit,
+            Dependencies.Parser.gson
+    )
+}

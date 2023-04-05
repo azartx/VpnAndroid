@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/nav_fragment_start">
+
+
+    <fragment
+        android:id="@id/nav_fragment_start"
+        android:name="com.vpn.vpnandroid.presentation.ui.StartFragment">
+
+        <action
+            android:id="@+id/nav_action_open_weather_fragment"
+            app:destination="@id/nav_fragment_weather" />
+
+        <action
+            android:id="@+id/nav_action_open_github_user_list"
+            app:destination="@id/nav_fragment_github_user_list" />
+    </fragment>
+
+<!--    <fragment-->
+<!--        android:id="@id/nav_fragment_github_user_list"-->
+<!--        android:name="com.example.feature.github_user_list.presentation.ui.GithubUserListFragment">-->
+
+<!--        <action-->
+<!--            android:id="@+id/nav_action_open_github_user_details"-->
+<!--            app:destination="@id/nav_fragment_github_user_details" />-->
+<!--    </fragment>-->
+
+<!--    <fragment-->
+<!--        android:id="@id/nav_fragment_github_user_details"-->
+<!--        android:name="com.example.feature.github_user_details.presentation.ui.GithubUserDetailsFragment">-->
+
+<!--        <argument-->
+<!--            android:name="login"-->
+<!--            android:defaultValue=""-->
+<!--            app:argType="string" />-->
+
+<!--        <action-->
+<!--            android:id="@+id/nav_action_open_github_repo_list"-->
+<!--            app:destination="@id/nav_graph_github_repo_list">-->
+
+<!--            <argument-->
+<!--                android:name="login"-->
+<!--                android:defaultValue=""-->
+<!--                app:argType="string" />-->
+<!--        </action>-->
+<!--    </fragment>-->
+
+<!--    <fragment-->
+<!--        android:id="@id/nav_fragment_weather"-->
+<!--        android:name="com.example.feature_weather.weather.presentation.ui.WeatherFragment">-->
+
+<!--        <action-->
+<!--            android:id="@+id/nav_action_open_forecast_weather"-->
+<!--            app:destination="@id/nav_fragment_forecast_weather" />-->
+
+<!--        <action-->
+<!--            android:id="@+id/nav_action_open_history_weather"-->
+<!--            app:destination="@id/nav_fragment_history_weather" />-->
+
+<!--        <action-->
+<!--            android:id="@+id/nav_action_open_latest_weather"-->
+<!--            app:destination="@id/nav_fragment_latest_weather" />-->
+<!--    </fragment>-->
+
+<!--    <fragment-->
+<!--        android:id="@id/nav_fragment_forecast_weather"-->
+<!--        android:name="com.example.feature_weather.weather_forecast.presentation.ui.ForecastWeatherFragment">-->
+<!--    </fragment>-->
+
+<!--    <fragment-->
+<!--        android:id="@id/nav_fragment_history_weather"-->
+<!--        android:name="com.example.feature_weather.weather_history.presentation.ui.HistoryWeatherFragment">-->
+<!--    </fragment>-->
+
+<!--    <fragment-->
+<!--        android:id="@id/nav_fragment_latest_weather"-->
+<!--        android:name="com.example.feature_weather.weather_latest.presentation.ui.LatestWeatherFragment">-->
+<!--    </fragment>-->
+
+<!--    <include-dynamic-->
+<!--        android:id="@id/nav_graph_github_repo_list"-->
+<!--        app:graphResName="graph_repo"-->
+<!--        app:moduleName="github_repo" />-->
+
+</navigation>

@@ -12,5 +12,17 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "VpnAndroid"
+
 include ':app'
+include ':app-test'
+include ':base'
+include ':design'
+include ':navigation'
+include ':util'
+include ':core:coreui'
+include ':core:di'
+include ':core:di-android'
+include ':core:network-api'
+include ':core:network'
+
+rootProject.name = "VpnAndroid"
