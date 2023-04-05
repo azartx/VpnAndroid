@@ -72,6 +72,7 @@ object Dependencies {
         @JvmStatic val ktStdLib = dependency("org.jetbrains.kotlin:kotlin-stdlib:${Versions.ktStdLib}")
         @JvmStatic val ktStdLibJdk7 = dependency("org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.ktStdLib}")
         @JvmStatic val timber = dependency("com.jakewharton.timber:timber:${Versions.timber}")
+        @JvmStatic val kotlinReflect = dependency("org.jetbrains.kotlin:kotlin-reflect:${Versions.ktStdLib}")
     }
 
     object Network {

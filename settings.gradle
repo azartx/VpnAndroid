@@ -24,5 +24,7 @@ include ':core:di'
 include ':core:di-android'
 include ':core:network-api'
 include ':core:network'
+include ':features'
 
 rootProject.name = "VpnAndroid"
+include ':features:feature-vpn'
