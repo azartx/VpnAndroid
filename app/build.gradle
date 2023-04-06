@@ -14,8 +14,6 @@ android {
     buildFeatures {
         dataBinding = true
     }
-
-//    dynamicFeatures = [':feature:github_repo']
 }
 
 dependencies {
@@ -23,25 +21,9 @@ dependencies {
             project(':core:di'),
             project(':core:di-android'),
             project(':core:network'),
-            project(':core:network-api'),
             project(':core:coreui'),
-
-//            project(':feature:github-core'),
-//            project(':feature:github-core-api'),
-//            project(':feature:github-user-details'),
-//            project(':feature:github-user-list'),
-//
-//            project(':feature-weather:weather-core'),
-//            project(':feature-weather:weather-core-api'),
-//            project(':feature-weather:weather'),
-//            project(':feature-weather:weather-forecast'),
-//            project(':feature-weather:weather-history'),
-//            project(':feature-weather:weather-latest'),
-//            project(':feature-weather:weather-network'),
-
             project(':navigation'),
             project(':design'),
-            project(':feature-vpn:vpn-core-api'),
             project(':feature-vpn:vpn-core')
     )
     implementation(

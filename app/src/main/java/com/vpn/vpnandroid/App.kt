@@ -32,17 +32,6 @@ class App : Application() {
 
 fun features(): List<FeatureImpl> =
     listOf(
-//        SchedulersLibraryImpl,
         NetworkLibraryImpl,
-//        GithubCoreFeatureImpl,
-//        GithubUserListFeatureImpl,
-//        GithubUserDetailsFeatureImpl,
-//
-//        WeatherCoreFeatureImpl,
-//        WeatherFeatureImpl,
-//        WeatherNetworkLibraryImpl,
-//        ForecastWeatherFeatureImpl,
-//        HistoryWeatherFeatureImpl,
-//        LatestWeatherFeatureImpl
         VpnCoreFeatureImpl
     )
