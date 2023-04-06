@@ -24,7 +24,12 @@ include ':core:di'
 include ':core:di-android'
 include ':core:network-api'
 include ':core:network'
-include ':features'
+
+include ':feature-vpn:vpn-core'
+include ':feature-vpn:vpn-core-api'
+include ':feature-vpn:vpn-network'
+include ':feature-vpn:vpn-network-api'
+include ':feature-vpn:vpn-util'
+include ':feature-vpn:vpn'
 
 rootProject.name = "VpnAndroid"
-include ':features:feature-vpn'

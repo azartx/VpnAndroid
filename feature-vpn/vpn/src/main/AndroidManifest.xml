@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vpn.feature_vpn.vpn">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application>
+        <service
+            android:name="com.vpn.features_vpn.vpn.services.AppVpnService"
+            android:enabled="true"
+            android:exported="false"
+            android:label="@string/vpn_service_lable"
+            android:permission="android.permission.BIND_VPN_SERVICE"
+            android:process=":RunSoLibV2RayDaemon">
+            <intent-filter>
+                <action android:name="android.net.VpnService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.net.VpnService.SUPPORTS_ALWAYS_ON"
+                android:value="true" />
+        </service>
+    </application>
+
+</manifest>

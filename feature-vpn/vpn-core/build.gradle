@@ -1,0 +1,31 @@
+import com.vpn.vpnandroid.build.Dependencies
+
+apply plugin: Dependencies.Plugin.androidLib
+apply plugin: Dependencies.Plugin.kotlinAndroid
+apply plugin: Dependencies.Plugin.kotlinParcelize
+
+dependencies {
+    implementation(
+            project(':base'),
+            project(':core:coreui'),
+            project(':core:di-android'),
+            project(':design'),
+            project(':feature-vpn:vpn-core-api'),
+            project(':feature-vpn:vpn-network-api'),
+            project(':navigation'),
+            project(':util'),
+    )
+    implementation(
+            Dependencies.AndroidX.appCompat,
+            Dependencies.AndroidX.coreKtx,
+            Dependencies.AndroidX.fragmentKtx,
+            Dependencies.AndroidX.navigation,
+            Dependencies.AndroidX.navigationUi,
+            Dependencies.Di.koin,
+            Dependencies.Di.koinAndroid,
+            Dependencies.Lib.ktStdLib,
+            Dependencies.Network.retrofit,
+            Dependencies.Network.retrofitMoshi,
+            Dependencies.Parser.gson
+    )
+}
