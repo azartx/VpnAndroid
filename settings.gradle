@@ -30,6 +30,5 @@ include ':feature-vpn:vpn-core-api'
 include ':feature-vpn:vpn-network'
 include ':feature-vpn:vpn-network-api'
 include ':feature-vpn:vpn-util'
-include ':feature-vpn:vpn'
 
 rootProject.name = "VpnAndroid"

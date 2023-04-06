@@ -41,6 +41,8 @@ dependencies {
 
             project(':navigation'),
             project(':design'),
+            project(':feature-vpn:vpn-core-api'),
+            project(':feature-vpn:vpn-core')
     )
     implementation(
             Dependencies.AndroidX.appCompat,

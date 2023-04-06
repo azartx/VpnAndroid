@@ -4,6 +4,7 @@ import android.app.Application
 import com.vpn.core.di.FeatureApiManager
 import com.vpn.core.di.FeatureImpl
 import com.vpn.core.network.NetworkLibraryImpl
+import com.vpn.feature_vpn.vpn_core.di.VpnCoreFeatureImpl
 import com.vpn.vpnandroid.di.mainModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -43,4 +44,5 @@ fun features(): List<FeatureImpl> =
 //        ForecastWeatherFeatureImpl,
 //        HistoryWeatherFeatureImpl,
 //        LatestWeatherFeatureImpl
+        VpnCoreFeatureImpl
     )
